@@ -35,6 +35,7 @@ def merge_data(keys, data)
   array = []
   keys.each do |key|
     data.each do |set|
+binding.pry
       set.keys.include?(key) ? array << key.merge(set) : false
     end
   end
