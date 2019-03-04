@@ -32,9 +32,9 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
+  binding.pry
   keys.each do |e|
     e.merge(data[e[:first_name]])
-    binding.pry
   end
 end
 
