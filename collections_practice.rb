@@ -53,12 +53,12 @@ end
 
 def organize_schools(schools)
   locations = []
-  schools.each do |school, data| 
+  schools.each do |school, data|
     locations << data[:location]
   end
 binding.pry
   locations.uniq!
-  
+
   list = {}
   location.each { |e| list[e] = [] }
   schools.each { |key, data| list[data[:location]] = key }
