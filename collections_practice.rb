@@ -33,7 +33,7 @@ end
 
 def merge_data(keys, data)
   keys.each do |e|
-    e.merge(data[e.keys[:first_name]])
+    e.merge(data[e[:first_name]])
   end
 end
 
