@@ -32,7 +32,9 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  binding.pry
+  keys.each do |e|
+    e.merge(data[keys[:first_name]])
+  end
 end
 
 def find_cool
