@@ -53,14 +53,10 @@ end
 
 def organize_schools(schools)
   locations = []
-  schools.each do |school, data|
-    locations << data[:location]
-  end
-binding.pry
+  schools.each { |school, data| locations << data[:location] }
   locations.uniq!
-
   list = {}
-  location.each { |e| list[e] = [] }
+  locations.each { |e| list[e] = [] }
   schools.each { |key, data| list[data[:location]] = key }
   list
 end
