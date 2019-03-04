@@ -51,6 +51,6 @@ def find_cool(array)
   list
 end
 
-def organize_schools
+def organize_schools(schools)
 
 end
