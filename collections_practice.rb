@@ -46,6 +46,7 @@ def find_cool(array)
   array.each do |e|
       e.each do |key, value|
         value == "cool" ? list << e : false
+      end
   end
   list
 end
