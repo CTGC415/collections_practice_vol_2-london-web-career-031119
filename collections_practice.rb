@@ -53,6 +53,7 @@ end
 
 def organize_schools(schools)
   locations = []
+  binding.pry
   schools.each { |e| locations << e[:location] }
   locations.uniq!
   list = {}
