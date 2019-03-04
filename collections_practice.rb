@@ -1,4 +1,5 @@
 # your code goes here
+require "pry"
 def begins_with_r(array)
   array.each do |string|
     if string.split(//).first != "r"
@@ -31,7 +32,7 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-
+  binding.pry
 end
 
 def find_cool
