@@ -34,6 +34,7 @@ end
 def merge_data(keys, data)
   keys.each do |e|
     e.merge(data[e[:first_name]])
+    binding.pry
   end
 end
 
