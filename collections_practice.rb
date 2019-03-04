@@ -35,7 +35,7 @@ def merge_data(keys, data)
 #  binding.pry
   array = []
   keys.each do |hash|
-    array << hash.merge(data[hash[:first_name]])
+    array << hash.merge(data[data.index(hash[:first_name]))
   end
   array
 end
