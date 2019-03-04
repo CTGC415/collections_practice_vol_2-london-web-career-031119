@@ -33,9 +33,11 @@ end
 
 def merge_data(keys, data)
   binding.pry
-  keys.each do |e|
-    e.merge(data[e[:first_name]])
+  array = []
+  keys.each do |hash|
+    array << hash.merge(data[hash[:first_name]])
   end
+  array
 end
 
 def find_cool
