@@ -42,7 +42,12 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
-
+  list = []
+  array.each do |e|
+      e.each do |key, value|
+        value == "cool" ? list << e : false
+  end
+  list
 end
 
 def organize_schools
