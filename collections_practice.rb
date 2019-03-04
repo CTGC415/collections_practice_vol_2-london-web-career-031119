@@ -32,9 +32,9 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-#  binding.pry
   array = []
   keys.each do |hash|
+    binding.pry
     array << hash.merge(data[data.index(hash[:first_name])])
   end
   array
