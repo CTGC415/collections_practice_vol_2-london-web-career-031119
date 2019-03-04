@@ -52,5 +52,11 @@ def find_cool(array)
 end
 
 def organize_schools(schools)
-  schools
+  locations = []
+  schools.each { |e| locations << e[:location] }
+  locations.uniq!
+  list = {}
+  location.each { |e| list[e] = [] }
+  schools.each { |key, data| list[data[:location]] = key }
+  list
 end
