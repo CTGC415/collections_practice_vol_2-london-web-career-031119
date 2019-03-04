@@ -33,9 +33,10 @@ end
 
 def merge_data(keys, data)
   array = []
-  keys.each do |hash|
-    binding.pry
-    array << hash.merge(data[data.index(hash[:first_name])])
+  keys.each do |key|
+    data.each do |set|
+      set.keys.include?(key) ? array << key.merge(set)
+    end
   end
   array
 end
