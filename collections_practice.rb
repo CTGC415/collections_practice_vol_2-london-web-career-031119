@@ -31,7 +31,7 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys.concat(data)
+  
 end
 
 def find_cool
